@@ -10,10 +10,10 @@ namespace interfaceee
             public int b;
 
 
-            public B()
+            public B(int m,int r)
             {
-                this.a = 1;
-                this.b = 2;
+                this.a = m;
+                this.b = r;
             }
         }
 
@@ -36,7 +36,7 @@ namespace interfaceee
         }
     static void Main(string[] args)
         {
-            B b= new B();
+            B b= new B(20,50);
             A a = new A(16,15,b);
             Program p = new Program();
 

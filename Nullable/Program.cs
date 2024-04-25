@@ -4,57 +4,47 @@ namespace Nullables
 {
     internal class Program
     {
-       public class A
-        {
-            public void show()
-            {
-                Console.WriteLine("hii");
-            }
-        }
-        public class B:A
-        {
-            public void show()
-            {
-                Console.WriteLine("Hello");
-            }
-        }
-        public class C:B
-        {
-            public void show()
-            {
-                Console.WriteLine("How Are You");
-            }
-        }
+        
         static void Main(string[] args)
         {
-            C c=new C();
-            c.show();
-            B b=new C();
-            b.show();
 
+            int? ak = null;
+            if (ak == null)
+            {
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
 
-            //int? r = 0;
-            //int? s = null;
-            //int a = s ?? 20;
-            //int? m = 26;
-            //nullable<int> n = null;
-            //int k = 0;
+            int? ER=null;
+           int KK = ER ?? 0;
 
-            //console.writeline(s);
-            //console.writeline(a);
-            //console.writeline(n.getvalueordefault());
-            //console.writeline(m.getvalueordefault());
-            //console.writeline(s.hasvalue);
-            //console.writeline(m.hasvalue);
+            Console.WriteLine(KK);
 
-            //if (nullable.compare<int>(n, r) < 0)
-            //{
-            //    console.writeline("less");
-            //}
-            //else
-            //{
-            //    console.writeline("greater");
-            //}
+            int? r = 0;
+            int? s = null;
+            int a = s ?? 20;
+            int? m = 26;
+            Nullable<int> n = null;
+            int k = 0;
+
+            Console.WriteLine(s);
+            Console.WriteLine(a);
+            Console.WriteLine(n.GetValueOrDefault());
+            Console.WriteLine(m.GetValueOrDefault());
+            Console.WriteLine(s.HasValue);
+            Console.WriteLine(m.HasValue);
+
+            if (Nullable.Compare<int>(n, r) < 0)
+            {
+                Console.WriteLine("less");
+            }
+            else
+            {
+                Console.WriteLine("greater");
+            }
         }
     }
 }

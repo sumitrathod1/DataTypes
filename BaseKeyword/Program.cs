@@ -2,6 +2,7 @@
 
 namespace BaseKeyword
 {
+    //It is used to acces any property from the base class
     internal class Program
     {
         class C
@@ -15,6 +16,7 @@ namespace BaseKeyword
         {
            public A(int v,int a, int b): base(v)  // Base keyword to send the value to the Class C through Constructor
             {
+
                 Console.WriteLine("This is class A "+ (a+b));
             }
         }

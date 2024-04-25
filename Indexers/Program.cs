@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.Intrinsics.Arm;
+using teamA.teamB;
 
 namespace Indexers
 {
@@ -20,6 +21,9 @@ namespace Indexers
         } 
         static void Main(string[] args)
         {
+            teamA.teA tA=new teamA.teA();
+            tA.show();
+
             Program p = new Program();
             p[0] = Convert.ToInt32(Console.ReadLine());
             p[1] = Convert.ToInt32(Console.ReadLine());
@@ -38,4 +42,26 @@ namespace Indexers
             Console.ReadLine();
         }
     }
+}
+
+namespace teamA
+{
+    namespace teamB
+    {
+        class teB
+        {
+            public void print()
+            {
+                Console.WriteLine("hii I am TeB");
+            }
+        }
+    }
+    class teA
+    {
+        public void show()
+        {
+            Console.WriteLine("hii team TeA");
+        }
+    }
+
 }

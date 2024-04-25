@@ -9,12 +9,12 @@ namespace inheritancess
         // Single inheritance 
         class A
         {
-           public void cource()
+            public void cource()
             {
                 Console.WriteLine("I am \"A\" Class and my cource is Dot NET");
             }
         }
-        class B:A
+        class B : A
         {
             public void cource2()
             {
@@ -23,7 +23,7 @@ namespace inheritancess
         }
 
         //multi level inheritance
-        class C:A
+        class C : A
         {
             public void cource3()
             {
@@ -33,7 +33,7 @@ namespace inheritancess
 
         //herarical inheritance
 
-        class D : B 
+        class D : B
         {
             public void cource4()
             {
@@ -53,7 +53,7 @@ namespace inheritancess
             void m2();
         }
 
-        class mulMain : mul,mul2
+        class mulMain : mul, mul2
         {
             public void m1()
             {
@@ -69,9 +69,9 @@ namespace inheritancess
                 Console.WriteLine("Hi I'am \"main\" multiple inheritance");
             }
         }
-
         static void Main(string[] args)
         {
+
             B b = new B();// single inheritance
             b.cource();
             b.cource2();
