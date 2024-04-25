@@ -2,11 +2,12 @@
 
 namespace Arrays
 {
-    internal class Program
+    public class Program
     {
+        // Array is 
         // created arrays 
         int[] a = new int[5];
-        void show()
+       public void show()
         {
             for (int i = 0; i < a.Length; i++)
             {
@@ -27,6 +28,10 @@ namespace Arrays
                 Console.WriteLine(val[i]);
             }
         }
+        public void sss()
+        {
+            Console.WriteLine("namespace");
+        }
         static void Main(string[] args)
         {
             Program p= new Program();
@@ -46,6 +51,44 @@ namespace Arrays
             {
                 Console.WriteLine(p.c[i]);
             }
+
+            // 2d Arrays 
+            int[,] a = new int[2, 3];
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    a[i, j]= Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    Console.Write(a[i,j]);
+                }
+                Console.WriteLine();
+            }
+
+            //jugged array
+            int[][] jag = new int[3][];
+            jag[0] = new int[] { 1, 2, 3, 4, 5, 6 };
+            jag[1] = new int[] { 2, 3, 4 };
+            jag[2] = new int[] { 5, 6 };
+
+            for (int i = 0; i < jag.Length; i++)
+            {
+                for (int j = 0; j < jag[i].Length; j++)
+                {
+                    Console.Write(jag[i][j]);
+                }
+                
+                
+                Console.WriteLine();
+            }
+
         }
     }
 }

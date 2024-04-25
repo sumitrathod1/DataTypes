@@ -38,16 +38,18 @@ namespace SealedClassAndMethod
             }
         }
 
-        class Z : Y
-        {
-            //public override void print()// we cannot create a method by sealed by parent claas Y it will through an compile time error 
-            //{
-            //    Console.WriteLine(@"Hii i am class 'Z'");
-            //}
-        }
+        //class Z : Y
+        //{
+        //    public override void print()// we cannot create a method by sealed by parent claas y it will through an compile time error 
+        //    {
+        //        Console.WriteLine(@"hii i am class 'z'");
+        //    }
+        //}
         static void Main(string[] args)
         {
-            X x= new Z();
+            A a = new A();
+            a.show();
+            X x= new Y();
             x.print();
         }
     }

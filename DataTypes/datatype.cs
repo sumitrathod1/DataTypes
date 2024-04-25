@@ -5,77 +5,17 @@ using static System.Formats.Asn1.AsnWriter;
 namespace DataTypes
 {
    
-    internal class Program
+    public class datatype
     {
-        struct Constr // Struct
+        class fornames
         {
-            private string x;
-            private int y;
-
-            public string Name {
-                get { return x; }
-                set { x = value; }
-            }
-            public int ID
+            public void show()
             {
-                get { return y; }
-                set { y = value; }
+                Console.WriteLine("public");
             }
-
-          public  Constr(String Name, int ID) {
-            
-                this.x = Name;
-                this.y = ID;
-            }
-
-            public void printt()
-            {
-                Console.WriteLine("Name is :" + Name + " ID is : " + ID);
-            }
-
-        }
-
-        enum gender  // ENum Class use 
-        {
-            Unknow,
-            Male,
-            Female
-        }
-
-        class Customers
-        {
-           public string Name { get; set; }
-            public gender gender { get; set; }
         }
 
         static void Main(string[] args) {
-
-            Customers[] C = new Customers[3];
-
-            C[0] = new Customers
-            {
-                Name = "Rihan",
-                gender = gender.Male
-            };
-            C[1] = new Customers
-            {
-                Name = "Lata",
-                gender = gender.Female
-            };
-            C[2] = new Customers
-            {
-                Name = "LOka",
-                gender = gender.Unknow
-            };
-
-            foreach (Customers i in C)
-            {
-                Console.WriteLine("Name is {0} and GEnder is {1}", i.Name, i.gender);
-            }
-
-            Constr point = new Constr("AMUl", 2000);
-
-            point.printt();
 
             //interger data type it can store numbers from -2,147,483,648 to 2,147,483,647.
             int num = 10;
