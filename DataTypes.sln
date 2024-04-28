@@ -59,9 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsNonGeneric", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{46E3DDC2-111A-42CE-B9D1-23C786D3C094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lamdas", "Lamdas\Lamdas.csproj", "{E18C0683-0F58-433D-B46F-3AA58A4EFB07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lamdas", "Lamdas\Lamdas.csproj", "{E18C0683-0F58-433D-B46F-3AA58A4EFB07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", "{146EAB34-A3D3-49BA-8186-7B2D0D100001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linq", "linq\linq.csproj", "{146EAB34-A3D3-49BA-8186-7B2D0D100001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zCRUDappusingADO", "zCRUDappusingADO\zCRUDappusingADO.csproj", "{1DB420DB-814B-43E8-8A9E-7DBC5E9482E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +191,10 @@ Global
 		{146EAB34-A3D3-49BA-8186-7B2D0D100001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146EAB34-A3D3-49BA-8186-7B2D0D100001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146EAB34-A3D3-49BA-8186-7B2D0D100001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB420DB-814B-43E8-8A9E-7DBC5E9482E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB420DB-814B-43E8-8A9E-7DBC5E9482E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB420DB-814B-43E8-8A9E-7DBC5E9482E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB420DB-814B-43E8-8A9E-7DBC5E9482E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
