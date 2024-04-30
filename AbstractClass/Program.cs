@@ -1,13 +1,25 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 
 namespace AbstractClass
 {
+    //An abstract class is a special kind of class that can not be instantiated.
     //Abstract classes are used to declare common characteristics of sbclasses,
     // A class which contains the abstract keyword in its declaration is know as abstract class
     //it can onlye be used as Base class for other classes that extend the abstract class.
     //If the class contain at least one abstract than the class must be declared abstract class
     // If class is declared abstrac than that class cannot be instantiated
+    //    You can not create an object of Abstract Class.
+    //An inheritance between abstract to abstract classes is possible.You do not need to implement abstract methods of the base abstract class into a derived abstract class. You can implement it later in concrete classes.
+    //An abstract class can never be sealed or static.
+    //An abstract class can have abstract as well as non abstract methods.
+    //The abstract keyword can be used with class, methods, properties, indexers and events.
+    //Abstract members can only be declared inside an abstract class.
+    //An abstract member can not be static or private.
+    //An abstract method can not be marked virtual.
+    //A concrete class can not inherit more than one abstract class, in other words multiple Inheritance is not possible.
+    //Without an abstract class, you can not implement the Template Method Pattern.
     internal class Program
     {
        public abstract class Detail
