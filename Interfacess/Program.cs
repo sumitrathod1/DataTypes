@@ -4,7 +4,7 @@ using Arrays;
 namespace Interfacess
 {
     //Interface 
-    //Insterface is a same as a class but contains only abstract members only 
+    //Insterface is a same as a class but contains only abstract members 
     //Innterface contains only declaration of the members no implimentation. implimentation is possible in the derived class 
     // Main use of interface is it can be use as multiple inheritance
     //Interface cannot have fields
